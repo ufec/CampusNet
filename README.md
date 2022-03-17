@@ -28,6 +28,11 @@ chmod +x ./young.sh
 ./young offline
 ```
 
+你也可以这样
+```shell
+wget https://ghproxy.com/https://raw.githubusercontent.com/ufec/CampusNet/main/young.sh -O young.sh && bash young.sh
+```
+
 ### 其他注意事项
   * 模拟手机端登陆，任何设备联网之后均可以分享热点，无视飞young限制
   * 手机端没有心跳包，连接飞young的设备无网络活动一段时间后会自动断开连接，解决方法有：
