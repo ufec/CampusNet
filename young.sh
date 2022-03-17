@@ -41,7 +41,12 @@ online() {
     echo -e "\033[49;32;1m[ 3 ] 获取今天日期 [ ✓ ]\n\033[0m"
     nowdate=${AidcAuthAttr1: 6: 2}
     UserName="!^Adcm0$username"
-    Password=${passwords[$nowdate - 1]}
+    passwordsLen=${#passwords[*]}
+    if [ "$passwordsLen" == 1 ]; then
+        Password=${passwords[0]}
+    else
+        Password=${passwords[$nowdate - 1]}
+    fi
     createAuthorFlag="0"
     AidcAuthAttr3="b5DtUJx1"
     AidcAuthAttr4="LNu8EsIhaVf/JdxatEuOF+4="
