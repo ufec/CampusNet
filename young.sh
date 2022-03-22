@@ -19,7 +19,7 @@ encoding="Accept-Encoding:gzip"
 
 # 自动获取登录链接
 getLoginUrl() {
-    trueUrl=`curl -I -s www.baidu.com | grep -Pao '[a-zA-z]+://[^\s]*'`
+    trueUrl=`curl -I -s www.baidu.com | grep -ao 'http://[a-zA-Z0-9\.:\/\?=&-]*'`
     curl -s -X POST $trueUrl -H $cty -H $ua -H $con -H $encoding > young.xml
     
     loginUrl=`awk '/<\/*LoginURL\/*>/{gsub(/<LoginURL><!\[CDATA\[/,"");gsub(/\]\]><\/LoginURL>/,"");print $0}' young.xml`
