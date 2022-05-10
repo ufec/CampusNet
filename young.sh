@@ -39,7 +39,7 @@ getLoginUrl() {
 
 online() {
     echo -e "\033[49;32;1m[ 3 ] 获取今天日期 [ ✓ ]\n\033[0m"
-    nowdate=${AidcAuthAttr1: 6: 2}
+    nowdate=`expr ${AidcAuthAttr1: 6: 2} + 0`
     UserName="!^Adcm0$username"
     passwordsLen=${#passwords[*]}
     if [ "$passwordsLen" == 1 ]; then
