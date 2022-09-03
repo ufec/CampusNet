@@ -1,6 +1,8 @@
 # CampusNet
 联通沃派、天翼飞Young 一体化登录器，绕过限制热点分享，路由器可直接上网
 
+注：`Fyoung` 已经更新，后浪们加油，永不屈服，永远斗争
+
 注意：本仓库只给出可执行文件，不包含源代码（由于种种原因）
 
 [博客](https://www.ufec.cn)给出了分析过程
@@ -18,7 +20,7 @@ Windows、Linux、mipsle 三个版本
  * **一个飞Young账号**
    * 注意：一旦使用本脚本登录，手机端将无法登录，请确认你的需求
  * **对应账号的31天密码**
-   * 声明：为了更多人能用，密码算法暂时无法公布，但我写了一个服务 [湖北飞Young校园网服务](https://schoolnet.ufec.cn/)，通过此服务是你可以免于抓包之痛，轻松获取当天密码，**服务器不会存储你的任何信息**
+   使用仓库中的 `fyoung.js` 生成即可
  * **使用前一定要连接飞young AP**
 
 ### 如何使用
@@ -40,4 +42,4 @@ wget https://ghproxy.com/https://raw.githubusercontent.com/ufec/CampusNet/main/y
     - 始终保持路由器有网络活动，这个就有很多办法了
 
 ### 支持仓库
-![赞赏码](https://my-static.ufec.cn/blog/sponsor_qrcode.png)
+![赞赏码](https://ghproxy.com/https://raw.githubusercontent.com/ufec/picGoImg/main/blog/sponsor_qrcode.webp)
