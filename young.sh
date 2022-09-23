@@ -97,11 +97,11 @@ checkLogin(){
     responseCode=`awk '/<\/*ResponseCode\/*>/{gsub(/[[:space:]]*<\/*ResponseCode\/*>/, ""); print $0}' offline_young.xml`
     if [ "$responseCode" != 50 ]; then
         echo -e "\033[49;31;1m[ 4 ] 😭 $loginMsg [ ✕ ]\n\033[0m"
-        return 0;
+        return 1;
     else
         echo -e "\033[49;32;1m[ 4 ] ✌️ $loginMsg [ ✓ ]\n\033[0m"
         echo -e "\033[49;34;1m 写码不易 尊重版权 欢迎Start: https://github.com/ufec/CampusNet\n\033[0m"
-        return 1;
+        return 0;
     fi
 }
 
